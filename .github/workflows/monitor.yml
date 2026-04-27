@@ -2,16 +2,17 @@ name: Seminar Slot Monitor
 
 on:
   schedule:
-    # Every 6 minutes = optimal for GitHub free tier
-    # 43,200 min/month / 6 = 7,200 runs x ~15sec = 1,800 min used (under 2,000 limit)
     - cron: '*/6 * * * *'
-
-  # Lets you also click "Run workflow" manually from GitHub UI
   workflow_dispatch:
 
 jobs:
   check-slots:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    # Give the job permission to push back to the repo
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -34,6 +35,17 @@ jobs:
 
       - name: Run monitor
         run: python monitor.py
+
+      # Commit alerted_slots.json back to repo as reliable backup
+      # [skip ci] prevents this commit from triggering another workflow run
+      - name: Save state to repo (backup)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add alerted_slots.json
+          git diff --cached --quiet || git commit -m "chore: update alert state [skip ci]"
+          git push
 
       - name: Save alert state cache
         uses: actions/cache/save@v4

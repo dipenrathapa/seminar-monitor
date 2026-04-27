@@ -129,12 +129,11 @@
 #         time.sleep(60)
 
 
-
 #!/usr/bin/env python3
 """
 DIT Pfarrkirchen Seminar Slot Monitor
 GitHub Actions version — runs once per trigger, then exits.
-State (alerted slots) is persisted via alerted_slots.json cached by GitHub Actions.
+State saved to both repo file AND cache for maximum reliability.
 """
 
 import requests
@@ -173,23 +172,35 @@ log = logging.getLogger("monitor")
 # ─── Persistent state ─────────────────────────────────────────────────────────
 
 def load_alerted() -> dict:
+    """
+    Load alerted slots from file.
+    File comes from either:
+      - git checkout (most reliable, persists forever)
+      - actions/cache restore (fast, but can be evicted)
+    Whichever is present, we use it.
+    """
     if os.path.exists(ALERTED_FILE):
         try:
             with open(ALERTED_FILE, encoding="utf-8") as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError):
-            log.warning("Could not read %s — starting fresh.", ALERTED_FILE)
+                data = json.load(f)
+                log.info("Loaded %d alerted slot(s) from %s", len(data), ALERTED_FILE)
+                return data
+        except (json.JSONDecodeError, IOError) as e:
+            log.warning("Could not read %s (%s) — starting fresh.", ALERTED_FILE, e)
+    else:
+        log.info("No existing state file found — starting fresh.")
     return {}
 
 
 def save_alerted(alerted: dict) -> None:
     with open(ALERTED_FILE, "w", encoding="utf-8") as f:
         json.dump(alerted, f, ensure_ascii=False, indent=2)
-    log.info("State saved to %s", ALERTED_FILE)
+    log.info("State saved to %s (%d entries)", ALERTED_FILE, len(alerted))
 
 # ─── Notification ─────────────────────────────────────────────────────────────
 
 def header_safe(text: str) -> str:
+    """Encode header value safely for HTTP (Latin-1 safe or percent-encoded)."""
     try:
         text.encode("latin-1")
         return text
@@ -268,38 +279,37 @@ def scrape_all_seminars() -> list:
                 "name":    name,
                 "taken":   taken,
                 "total":   total,
-                "url":     BASE_URL + slot_id,
+                "url":     urllib.parse.urljoin(BASE_URL, slot_id),
                 "seats":   seat_txt,
             })
 
+        # Follow pagination using urljoin (handles all href formats safely)
         next_link = soup.find("a", rel="next")
         if next_link and next_link.get("href"):
-            href = next_link["href"]
-            page_url = BASE_URL + href if href.startswith("/") else href
+            page_url = urllib.parse.urljoin(BASE_URL, next_link["href"])
             time.sleep(1)
         else:
             page_url = None
 
     return seminars
 
-# ─── Main (runs once) ─────────────────────────────────────────────────────────
+# ─── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
     log.info("=" * 55)
     log.info("DIT Seminar Monitor — GitHub Actions run")
-    log.info("Time: %s", datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC"))
+    log.info("Time: %s UTC", datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"))
     log.info("=" * 55)
 
     alerted = load_alerted()
-    log.info("Loaded %d previously alerted slot(s).", len(alerted))
 
     seminars = scrape_all_seminars()
     if not seminars:
         log.warning("No seminars found — site may be down.")
+        save_alerted(alerted)  # still save so git commit step has a file
         sys.exit(0)
 
     log.info("Found %d seminar entries total.", len(seminars))
-    newly_alerted = False
 
     for s in seminars:
         slot_id = s["slot_id"]
@@ -325,18 +335,15 @@ def main():
                 if sent:
                     alerted[slot_id] = {
                         "name":       s["name"],
-                        "alerted_at": datetime.now().isoformat(timespec="seconds"),
+                        "alerted_at": datetime.utcnow().isoformat(timespec="seconds"),
                     }
-                    newly_alerted = True
             else:
                 log.info("  (already notified — skipping)")
         else:
             if slot_id in alerted:
                 log.info("  (was open, now full again — resetting)")
                 del alerted[slot_id]
-                newly_alerted = True
 
-    # Always save state so the cache is updated
     save_alerted(alerted)
     log.info("Done. Goodbye!")
 
