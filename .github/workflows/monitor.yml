@@ -1,6 +1,8 @@
 name: Seminar Slot Monitor
 
 on:
+  push:
+    branches: [main]
   schedule:
     - cron: '*/6 * * * *'
   workflow_dispatch:
