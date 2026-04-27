@@ -1,0 +1,306 @@
+2026-04-27 07:44:14  INFO     ============================================================
+2026-04-27 07:44:14  INFO     DIT Pfarrkirchen Seminar Slot Monitor v2.0
+2026-04-27 07:44:14  INFO     ntfy channel : https://ntfy.sh/dipendra_seminar_alert
+2026-04-27 07:44:14  INFO     Poll interval: 60s
+2026-04-27 07:44:14  INFO     ============================================================
+2026-04-27 07:44:14  INFO     Sending test notification to ntfy.sh...
+2026-04-27 07:44:15  ERROR      ✗ Notification failed: 'latin-1' codec can't encode character '\u2705' in position 0: ordinal not in range(256)
+2026-04-27 07:44:15  WARNING  Test notification failed. Check your ntfy.sh URL.
+2026-04-27 07:44:15  INFO     Loaded 0 previously alerted slot(s) from disk.
+2026-04-27 07:44:15  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:44:16  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:44:16  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:44:16  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:44:16  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:44:16  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:44:16  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:44:16  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:44:16  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:44:16  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:44:16  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:44:16  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:44:16  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:44:16  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:44:16  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:44:16  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:44:16  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:44:16  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:44:16  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:44:16  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:44:16  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:44:16  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:44:16  INFO     Sleeping 60s...
+
+2026-04-27 07:45:16  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:45:18  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:45:18  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:45:18  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:45:18  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:45:18  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:45:18  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:45:18  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:45:18  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:45:18  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:45:18  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:45:18  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:45:18  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:45:18  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:45:18  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:45:18  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:45:18  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:45:18  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:45:18  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:45:18  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:45:18  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:45:18  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:45:18  INFO     Sleeping 60s...
+
+2026-04-27 07:46:02  INFO     ============================================================
+2026-04-27 07:46:02  INFO     DIT Pfarrkirchen Seminar Slot Monitor v2.0
+2026-04-27 07:46:02  INFO     ntfy channel : https://ntfy.sh/dipendra_seminar_alert
+2026-04-27 07:46:02  INFO     Poll interval: 60s
+2026-04-27 07:46:02  INFO     ============================================================
+2026-04-27 07:46:02  INFO     Sending test notification to ntfy.sh...
+2026-04-27 07:46:03  INFO       ✓ Notification sent!
+2026-04-27 07:46:03  INFO     Test notification delivered — your phone should buzz now.
+2026-04-27 07:46:03  INFO     Loaded 0 previously alerted slot(s) from disk.
+2026-04-27 07:46:03  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:46:04  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:46:04  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:46:04  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:46:04  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:46:04  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:46:04  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:46:04  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:46:04  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:46:04  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:46:04  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:46:04  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:46:04  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:46:04  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:46:04  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:46:04  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:46:04  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:46:04  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:46:04  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:46:04  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:46:04  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:46:04  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:46:04  INFO     Sleeping 60s...
+
+2026-04-27 07:47:04  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:47:06  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:47:06  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:47:06  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:47:06  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:47:06  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:47:06  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:47:06  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:47:06  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:47:06  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:47:06  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:47:06  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:47:06  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:47:06  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:47:06  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:47:06  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:47:06  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:47:06  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:47:06  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:47:06  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:47:06  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:47:06  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:47:06  INFO     Sleeping 60s...
+
+2026-04-27 07:48:06  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:48:08  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:48:08  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:48:08  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:48:08  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:48:08  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:48:08  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:48:08  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:48:08  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:48:08  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:48:08  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:48:08  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:48:08  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:48:08  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:48:08  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:48:08  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:48:08  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:48:08  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:48:08  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:48:08  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:48:08  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:48:08  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:48:08  INFO     Sleeping 60s...
+
+2026-04-27 07:49:08  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:49:09  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:49:09  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:49:09  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:49:09  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:49:09  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:49:09  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:49:09  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:49:09  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:49:09  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:49:09  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:49:09  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:49:09  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:49:09  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:49:09  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:49:09  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:49:09  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:49:09  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:49:09  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:49:09  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:49:09  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:49:09  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:49:09  INFO     Sleeping 60s...
+
+2026-04-27 07:50:09  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:50:11  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:50:11  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:50:11  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:50:11  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:50:11  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:50:11  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:50:11  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:50:11  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:50:11  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:50:11  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:50:11  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:50:11  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:50:11  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:50:11  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:50:11  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:50:11  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:50:11  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:50:11  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:50:11  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:50:11  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:50:11  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:50:11  INFO     Sleeping 60s...
+
+2026-04-27 07:51:11  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:51:13  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:51:13  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:51:13  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:51:13  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:51:13  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:51:13  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:51:13  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:51:13  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:51:13  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:51:13  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:51:13  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:51:13  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:51:13  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:51:13  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:51:13  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:51:13  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:51:13  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:51:13  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:51:13  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:51:13  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:51:13  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:51:13  INFO     Sleeping 60s...
+
+2026-04-27 07:52:13  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:52:14  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:52:14  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:52:14  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:52:14  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:52:14  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:52:14  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:52:14  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:52:14  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:52:14  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:52:14  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:52:14  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:52:14  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:52:14  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:52:14  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:52:14  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:52:14  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:52:14  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:52:14  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:52:14  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:52:14  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:52:14  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:52:14  INFO     Sleeping 60s...
+
+2026-04-27 07:53:14  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:53:16  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:53:16  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:53:16  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:53:16  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:53:16  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:53:16  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:53:16  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:53:16  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:53:16  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:53:16  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:53:16  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:53:16  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:53:16  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:53:16  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:53:16  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:53:16  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:53:16  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:53:16  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:53:16  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:53:16  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:53:16  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:53:16  INFO     Sleeping 60s...
+
+2026-04-27 07:54:16  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:54:18  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:54:18  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:54:18  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:54:18  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:54:18  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:54:18  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:54:18  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:54:18  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:54:18  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:54:18  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:54:18  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:54:18  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:54:18  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:54:18  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:54:18  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:54:18  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:54:18  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:54:18  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:54:18  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:54:18  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:54:18  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:54:18  INFO     Sleeping 60s...
+
+2026-04-27 07:55:18  INFO     ─── Checking https://pmit-ext.th-deg.de/seminare/ec seminars page(s)... ───
+2026-04-27 07:55:19  INFO     Found 20 seminar entries across all pages.
+2026-04-27 07:55:19  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:55:19  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-06-11
+2026-04-27 07:55:19  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:55:19  INFO       [45/45] Career Competence (ECRI) - Studying & Working in Germany (Visa Regulat
+2026-04-27 07:55:19  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:55:19  INFO       [35/35] Study & Personal Competencies (ECRI) -  Presentation Techniques* am 20
+2026-04-27 07:55:19  INFO       [35/35] Study- & Personal Competence (ECRI): Decision-making and problem-solvi
+2026-04-27 07:55:19  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:55:19  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:55:19  INFO       [25/25] Study & Personal Competencies (ECRI) - Time & Self-Management* (ONLY A
+2026-04-27 07:55:19  INFO       [35/35] Study- & Personal Competence (ECRI): Arguing, self-esteem, presenting 
+2026-04-27 07:55:19  INFO       [28/28] Career Competencies (ECRI) - Self marketing and salary negotiations* a
+2026-04-27 07:55:19  INFO       [28/28] Career Competencies (ECRI) - Rights and obligations in the German empl
+2026-04-27 07:55:19  INFO       [35/35] Study- & Personal Competence (ECRI): Developing the courage to make mi
+2026-04-27 07:55:19  INFO       [20/20] Study- and Personal Competence (ECRI) - Stress-free through your studi
+2026-04-27 07:55:19  INFO       [28/28] Career Competencies (ECRI) - How to make the best of your internship* 
+2026-04-27 07:55:19  INFO       [35/35] Study & Personal Competence (ECRI): Scientific Methods*  am 2026-05-13
+2026-04-27 07:55:19  INFO       [28/28] Career Competencies (ECRI) - Business Etiquette*, Karrierecoach Münche
+2026-04-27 07:55:19  INFO       [25/25] Study & Personal Competence (ECRI): Teamwork & Design Thinking* am 202
+2026-04-27 07:55:19  INFO       [35/35] Career Competence (ECRI) - How to apply to german companies* am 2026-0
+2026-04-27 07:55:19  INFO     Sleeping 60s...
+

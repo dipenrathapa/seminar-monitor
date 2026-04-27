@@ -2,10 +2,9 @@ name: Seminar Slot Monitor
 
 on:
   schedule:
-    # Runs every 5 minutes
-    # Note: GitHub Actions minimum is 5 minutes — not 60 seconds
-    # But 5 minutes is fast enough to catch a cancellation
-    - cron: '*/5 * * * *'
+    # Every 6 minutes = optimal for GitHub free tier
+    # 43,200 min/month / 6 = 7,200 runs x ~15sec = 1,800 min used (under 2,000 limit)
+    - cron: '*/6 * * * *'
 
   # Lets you also click "Run workflow" manually from GitHub UI
   workflow_dispatch:
@@ -15,21 +14,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Download your repo files onto the runner
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 3. Install dependencies
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      # 4. Restore alerted_slots.json from previous run (so we don't re-notify)
       - name: Restore alert state cache
         uses: actions/cache@v4
         with:
@@ -37,11 +32,9 @@ jobs:
           key: alerted-slots-cache
           restore-keys: alerted-slots-cache
 
-      # 5. Run the monitor script
       - name: Run monitor
         run: python monitor.py
 
-      # 6. Save updated alerted_slots.json for the next run
       - name: Save alert state cache
         uses: actions/cache/save@v4
         if: always()

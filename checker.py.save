@@ -1,0 +1,103 @@
+import requests
+from bs4 import BeautifulSoup
+import time
+
+URL = "https://pmit-ext.th-deg.de/seminare/ec"
+
+# Exact seminar page ID for "Presentation Techniques"
+TARGET_URL_PART = "/seminare/dates/view/3243"
+
+def check_seminar():
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+
+        response = requests.get(URL, headers=headers, timeout=10)
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        rows = soup.find_all("tr")
+
+        for row in rows:
+            link = row.find("a")
+
+            if link and TARGET_URL_PART in link.get("href", ""):
+                cells = row.find_all("td")
+
+                if len(cells) >= 2:
+                    seats = cells[1].text.strip()
+
+                    print("🎯 Seminar found!")
+                    print("Status:", seats)
+
+                    # Check availability
+                    if seats != "35 / 35":
+                        print("🚨 SLOT AVAILABLE!")
+                        return True
+
+                    return False
+
+        print("Seminar not found in page.")
+        return False
+
+    except Exception as e:
+        print("Error:", e)
+        return False
+
+
+if __name__ == "__main__":
+    print("Starting seminar checker...\n")
+
+    while True:
+        found = check_seminar()
+
+        if found:
+            break
+
+        print("Still full. Checking again in 60 seconds...\n")
+        time.sleep(60)import requests
+from bs4 import BeautifulSoup
+import time
+
+URL = "https://pmit-ext.th-deg.de/seminare/ec"
+TARGET_KEYWORD = "Presentation Techniques"
+
+def check_seminar():
+    try:
+        response = requests.get(URL, timeout=10)
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        rows = soup.find_all("tr")
+
+        for row in rows:
+            text = row.get_text()
+
+            if TARGET_KEYWORD in text:
+                cells = row.find_all("td")
+
+                if len(cells) >= 2:
+                    seats = cells[1].text.strip()
+                    print("Current status:", seats)
+
+                    if not seats.startswith("35 / 35"):
+                        print("🎉 SLOT AVAILABLE!")
+                        return True
+
+        return False
+
+    except Exception as e:
+        print("Error:", e)
+        return False
+
+
+if __name__ == "__main__":
+    print("Starting seminar checker (local test)...")
+
+    while True:
+        found = check_seminar()
+
+        if found:
+            break
+
+        print("Still full. Checking again in 60 seconds...\n")
+        time.sleep(60)
