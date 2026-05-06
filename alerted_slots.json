@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "/seminare/dates/view/3232": {
     "name": "Study- & Personal Competence (ECRI): Developing the courage to make mistakes*  am 2026-05-15",
     "alerted_at": "2026-05-06T10:30:38"
@@ -6,5 +7,30 @@
   "/seminare/dates/view/3231": {
     "name": "Study- and Personal Competence (ECRI) - Stress-free through your studies*, Techniker Krankenkasse am 2026-05-13",
     "alerted_at": "2026-05-06T10:30:38"
+=======
+  "/seminare/dates/view/3269": {
+    "name": "Info und Beratung - Five steps to an internship abroad am 2026-06-15",
+    "alerted_at": "2026-04-27T17:37:47"
+  },
+  "/seminare/dates/view/3268": {
+    "name": "Info und Beratung - Fünf Schritte ins Auslandspraktikum  am 2026-06-10",
+    "alerted_at": "2026-04-27T17:37:48"
+  },
+  "/seminare/dates/view/3267": {
+    "name": "Studien- & Persönlichkeitskompetenz - Präsentationstechniken*, Raphael Schätzl am 2026-04-28",
+    "alerted_at": "2026-04-27T17:37:48"
+  },
+  "/seminare/dates/view/3186": {
+    "name": "Studien- und Persönlichkeitskomptenz - Grundlagen der Kommunikation*, Simone Heigl am 2026-04-30",
+    "alerted_at": "2026-04-27T17:37:48"
+  },
+  "/seminare/dates/view/3183": {
+    "name": "Studien- und Persönlichkeitskompetenz: Die erfolgreiche Gehaltsverhandlung*, Karrierecoach am 2026-04-28",
+    "alerted_at": "2026-04-27T17:37:49"
+  },
+  "/seminare/dates/view/3124": {
+    "name": "DualForum Niederbayern am 28.10.2026 am 2026-10-28",
+    "alerted_at": "2026-04-27T17:37:49"
+>>>>>>> 831187e (some changes to only notify seminar presentation techniques)
   }
 }

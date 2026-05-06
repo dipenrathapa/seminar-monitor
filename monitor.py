@@ -1,134 +1,3 @@
-# import requests
-# from bs4 import BeautifulSoup
-# import time, re, json, os
-
-# URL          = "https://pmit-ext.th-deg.de/seminare/ec"
-# BASE_URL     = "https://pmit-ext.th-deg.de"
-# KEYWORD      = "Presentation Techniques"
-# NTFY_URL     = "https://ntfy.sh/dipendra_seminar_alert"
-# ALERTED_FILE = "alerted.json"
-
-# # ── persist alerted set to disk ───────────────────────────────
-# def load_alerted():
-#     if os.path.exists(ALERTED_FILE):
-#         with open(ALERTED_FILE) as f:
-#             return set(json.load(f))
-#     return set()
-
-# def save_alerted(alerted):
-#     with open(ALERTED_FILE, "w") as f:
-#         json.dump(list(alerted), f)
-
-# # ── send ntfy notification ────────────────────────────────────
-# def send_alert(message):
-#     try:
-#         requests.post(NTFY_URL, data=message.encode("utf-8"), timeout=10)
-#         print("  Notification sent!")
-#     except Exception as e:
-#         print("  Notification failed:", e)
-
-# # ── parse "35 / 35" into (taken, total) ──────────────────────
-# def parse_status(status_text):
-#     match = re.search(r"(\d+)\s*/\s*(\d+)", status_text)
-#     if match:
-#         return int(match.group(1)), int(match.group(2))
-#     return None, None
-
-# # ── fetch all pages ───────────────────────────────────────────
-# def get_all_rows():
-#     all_rows = []
-#     page = 1
-#     headers = {"User-Agent": "Mozilla/5.0 (compatible; SeminarBot/1.0)"}
-#     while True:
-#         page_url = f"{URL}/page:{page}" if page > 1 else URL
-    
-#         try:
-#             r = requests.get(page_url, headers=headers, timeout=10)
-#             r.raise_for_status()
-#         except Exception as e:
-#             print(f"  Failed to fetch page {page}: {e}")
-#             break
-#         soup = BeautifulSoup(r.text, "html.parser")
-#         rows = soup.find_all("tr")
-#         all_rows.extend(rows)
-#         if not soup.find("a", rel="next"):
-#             break
-#         page += 1
-#         time.sleep(1)
-#     return all_rows
-
-# # ── main check ────────────────────────────────────────────────
-# def check_slots(alerted):
-#     print(f"\nChecking... [{time.strftime('%H:%M:%S')}]")
-#     found_any = False
-
-#     for row in get_all_rows():
-#         cells = row.find_all("td")
-#         if len(cells) < 2:
-#             continue
-
-#         link_tag = cells[0].find("a")
-#         if not link_tag:
-#             continue
-
-#         name    = link_tag.get_text(strip=True)
-#         if KEYWORD not in name:
-#             continue
-
-#         # ✅ FIX: use the href as slot_id — stable, never contains seat count
-#         #    e.g. "/seminare/dates/view/3243"  — unique per seminar date
-#         slot_id  = link_tag["href"]
-#         full_url = BASE_URL + slot_id
-#         status   = cells[1].get_text(strip=True)
-#         taken, total = parse_status(status)
-#         found_any = True
-
-#         print(f"  Seminar : {name[:65]}")
-#         print(f"  Status  : {status}  |  id={slot_id}")
-
-#         if taken is not None and taken < total:
-#             if slot_id not in alerted:
-#                 print("  >> SLOT AVAILABLE — sending alert!")
-#                 send_alert(
-#                     f"SLOT OPEN!\n\n"
-#                     f"{name}\n"
-#                     f"Seats: {status}\n\n"
-#                     f"Register: {full_url}"
-#                 )
-#                 alerted.add(slot_id)
-#                 save_alerted(alerted)
-#             else:
-#                 print("  (already alerted — skipping)")
-#         else:
-#             # full again → clear from alerted so we re-notify if it reopens
-#             if slot_id in alerted:
-#                 alerted.discard(slot_id)
-#                 save_alerted(alerted)
-#                 print("  (slot closed again — reset for future alerts)")
-
-#     if not found_any:
-#         print("  No matching seminar found on any page")
-
-# # ── test ─────────────────────────────────────────────────────
-# def test_system():
-#     print("TEST MODE — sending test notification...")
-#     send_alert("TEST: ntfy is working! Monitor is alive.")
-#     print("If your phone buzzed, everything is connected.\n")
-
-# # ── entrypoint ────────────────────────────────────────────────
-# if __name__ == "__main__":
-#     test_system()
-#     alerted = load_alerted()
-#     print("Monitoring started. Checking every 60 seconds...")
-#     while True:
-#         try:
-#             check_slots(alerted)
-#         except Exception as e:
-#             print("Unexpected error:", e)
-#         print("  Sleeping 60s...\n")
-#         time.sleep(60)
-
-
 #!/usr/bin/env python3
 """
 DIT Pfarrkirchen Seminar Slot Monitor
@@ -153,6 +22,9 @@ BASE_URL     = "https://pmit-ext.th-deg.de"
 START_URL    = f"{BASE_URL}/seminare/ec"
 NTFY_URL     = "https://ntfy.sh/dipendra_seminar_alert"
 ALERTED_FILE = "alerted_slots.json"
+
+# *** ONLY notify for seminars whose name contains this keyword ***
+NOTIFY_KEYWORD = "Presentation Techniques"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; SeminarSlotBot/2.0)",
@@ -317,6 +189,10 @@ def main():
         total   = s["total"]
 
         if taken is None:
+            continue
+
+        # *** Only notify for seminars matching the keyword ***
+        if NOTIFY_KEYWORD not in s["name"]:
             continue
 
         available = total - taken
